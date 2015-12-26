@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <myconf_vijaystore translate="label" module="hotproducts">
+            <label>Vijay</label>
+            <sort_order>100</sort_order>
+        </myconf_vijaystore>
+    </tabs>	
+	
+    <sections>
+        <hotproducts_tab translate="label" module="hotproducts">
+            <label>Hot Products Sold</label>
+            <tab>myconf_vijaystore</tab>
+            <sort_order>1</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <hotproducts_setting translate="label comment">
+                    <label>Hot Products Sold Setting</label>
+                    <sort_order>503</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                      <hotproducts_active translate="label comment">
+                            <label>Hot Products Sold</label>
+							<frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </hotproducts_active>
+						<hotproducts_position translate="label comment">
+                            <label>Display In</label>
+							<frontend_type>select</frontend_type>
+                            <source_model>hotproducts/dropdown_position</source_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </hotproducts_position>
+						<hotproducts_title translate="label comment">
+								<label>Title</label>
+								<frontend_type>text</frontend_type>
+								<validate>required-entry </validate>							
+								<sort_order>6</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>1</show_in_store>
+						</hotproducts_title>
+						<hotproducts_display_count translate="label comment">
+							<label>Product To be Display</label>
+							<frontend_type>text</frontend_type>
+							<validate>required-entry validate-number</validate>	
+							<sort_order>7</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</hotproducts_display_count> 
+                     </fields>
+                </hotproducts_setting>		
+            </groups>
+        </hotproducts_tab>
+    </sections>
+</config>

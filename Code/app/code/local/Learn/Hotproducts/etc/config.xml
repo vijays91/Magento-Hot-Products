@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Learn_Hotproducts>
+            <version>1.0.0</version>
+        </Learn_Hotproducts>
+    </modules>
+    
+    <frontend>
+		<layout>
+			<updates>
+				<hotproducts>
+					<file>learn/hotproducts.xml</file>
+				</hotproducts>
+			</updates>
+		</layout>
+	</frontend>
+    
+    <global>
+		<blocks>
+            <hotproducts>
+                <class>Learn_Hotproducts_Block</class>
+            </hotproducts>
+        </blocks>
+		
+		<helpers>
+			<hotproducts>
+				<class>Learn_Hotproducts_Helper</class>
+			</hotproducts>
+		</helpers>
+        
+		<models>
+			<hotproducts>
+				<class>Learn_Hotproducts_Model</class>
+			</hotproducts>
+		</models> 
+        <resources>
+            <hotproducts_setup>
+                <setup>
+                    <module>Learn_Hotproducts</module>
+                    <class>Mage_Catalog_Model_Resource_Eav_Mysql4_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+             </hotproducts_setup>
+                          
+            <hotproducts_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </hotproducts_write>
+            
+            <hotproducts_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </hotproducts_read>
+        </resources>
+    </global>
+    
+	<default>
+		<hotproducts_tab>
+			<hotproducts_setting>
+				<hotproducts_active>1</hotproducts_active>
+				<hotproducts_position>1</hotproducts_position>
+				<hotproducts_title>Hot Products Sold</hotproducts_title>
+				<hotproducts_display_count>3</hotproducts_display_count>
+			</hotproducts_setting>
+		</hotproducts_tab>
+	</default>
+</config>

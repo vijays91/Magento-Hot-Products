@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+        <!-- Right Side -->
+        <reference name="right">
+            <block type="hotproducts/hotproducts" name="hotproducts_right" as="hotproducts_right" after="-">
+				<action method="setTemplate" ifconfig="hotproducts_tab/hotproducts_setting/hotproducts_active">
+					<template helper="hotproducts/data/postion_right" />
+				</action>
+			</block>
+        </reference>
+        
+		<!-- Left Side -->
+		<reference name="left">
+			<block type="hotproducts/hotproducts" name="hotproducts_left" as="hotproducts_left" after="-">
+				<action method="setTemplate" ifconfig="hotproducts_tab/hotproducts_setting/hotproducts_active">
+					<template helper="hotproducts/data/postion_left" />
+				</action>
+			</block>
+		</reference>
+    </default>
+</layout>
